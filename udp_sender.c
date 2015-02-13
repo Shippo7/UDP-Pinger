@@ -109,7 +109,7 @@ int main(int argc, char **argv){
             printf("RTT: %.3f Seconds\n", timeuse);
         }
         else{
-            printf("\nMessage Receive Timeout\n");
+            printf("\nMessage Receive Timeout or Error\n");
             printf("\n---------------\n");
             continue;
         }
