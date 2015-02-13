@@ -16,7 +16,7 @@
 #include <arpa/inet.h>
 #include <sys/time.h>
 
-#define TIMEOUT 1
+#define TIMEOUT 2
 #define BUFSIZE 100
 
 int main(int argc, char **argv){

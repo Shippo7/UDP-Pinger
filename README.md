@@ -2,7 +2,8 @@
 Exchanging an UDP message between client and server, and show the Round Trip Time (RTT).
 
 # Description
-There is a sender program and a receiver program. The sender program will send “ping” message with UDP socket to the receiver program. If the receiver got the “ping” message, it will return a “pong” message to the sender. After that, the sender will show the RTT of this message exchange. The time out is be set by 1 second. If the sender is not received the “pong” message in 1 second, it will send the next message.
+There is a sender program and a receiver program. The sender program will send “ping” message with UDP socket to the receiver program. If the receiver got the “ping” message, it will return a “pong” message to the sender. After that, the sender will show the RTT of this message exchange. The timeout is be default set by 2 second. If the sender is not received the “pong” message in 2 second, it will send the next message.
+
 
 # Usage
 Udp_sender: ./udp_sender &lt;hostname> &lt;port> &lt;message_number><br />
