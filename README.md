@@ -12,6 +12,4 @@ Udp_receiver: ./udp_receiver &lt;port><br />
 e.g. Listening port 18300: ./udp_receiver 18300<br />
 
 # Compile the source code
-A Makefile for compile is privided.<br />
-Use “make” command to compile the programs <br />
-Use “make clean” to delete the executive files <br />
+A Makefile for compile is provided.<br />
