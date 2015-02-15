@@ -14,3 +14,7 @@ e.g. Listening port 18300: ./udp_receiver 18300<br />
 
 # Compile the source code
 A Makefile for compile is provided.<br />
+
+# License
+UDP-Pinger is released under the MIT License  
+http://opensource.org/licenses/MIT
