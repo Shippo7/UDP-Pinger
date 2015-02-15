@@ -6,11 +6,26 @@ There is a sender program and a receiver program. The sender program will send â
 
 
 # Usage
-Udp_sender: ./udp_sender &lt;hostname> &lt;port> &lt;message_number><br />
-e.g. Sending 10 messages to host name: ./udp_sender example.com 18300 10 <br />
-e.g. Sending 5 messages to ip address: ./udp_sender 127.0.0.1 18300 5<br />
-Udp_receiver: ./udp_receiver &lt;port><br />
-e.g. Listening port 18300: ./udp_receiver 18300<br />
+Udp_sender: 
+<pre>
+./udp_sender &lt;hostname> &lt;port> &lt;message_number>
+</pre>
+e.g. Sending 10 messages to host name: 
+<pre> 
+./udp_sender example.com 18300 10 
+</pre>
+e.g. Sending 5 messages to ip address: 
+<pre> 
+./udp_sender 127.0.0.1 18300 5
+</pre>
+Udp_receiver: 
+<pre>
+./udp_receiver &lt;port>
+</pre>
+e.g. Listening port 18300: 
+<pre>
+./udp_receiver 18300
+</pre>
 
 # Compile the source code
 A Makefile for compile is provided.<br />
