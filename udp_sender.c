@@ -34,6 +34,7 @@ int main(int argc, char **argv){
     struct in_addr **addr_list;
     struct timeval starttime, endtime;//init the clock
     struct timeval timeout={TIMEOUT,0}; //set timeout
+    int i;
     
     /* Get host name, port number, loop times */
     if(argc==4){
@@ -59,7 +60,7 @@ int main(int argc, char **argv){
     
     addr_list = (struct in_addr **) he->h_addr_list;
     
-    for(int i = 0; addr_list[i] != NULL; i++)
+    for(i = 0; addr_list[i] != NULL; i++)
     {
         strcpy(ip , inet_ntoa(*addr_list[i]) );
     }
@@ -88,7 +89,7 @@ int main(int argc, char **argv){
     
     /* Send the messages and calculate RTT */
     
-    for (int i=0; i < times; i++) {
+    for (i=0; i < times; i++) {
         char send_buf[] = "ping";
         if (sendto(fd, send_buf, strlen(buf), 0, (struct sockaddr *)&remaddr, slen)==-1) {
             perror("sendto");
